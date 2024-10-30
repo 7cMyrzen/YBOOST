@@ -24,6 +24,9 @@ func main() {
 	// Gestionnaire pour la route d'accueil
 	r.HandleFunc("/", handlers.Home)
 
+	// Gestionnaire pour l'API
+	// r.HandleFunc("/api", handlers.API)
+
 	// Gestionnaire pour les cocktails
 	r.HandleFunc("/cocktails", handlers.Cocktails)
 
