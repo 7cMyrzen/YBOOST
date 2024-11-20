@@ -60,6 +60,29 @@ body {
                 align-items: center;
 
                 overflow: hidden;
+
+                img {
+                    height: 55%;
+                    width: auto;
+                    aspect-ratio: 1/1;
+
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                p {
+                    height: 100%;
+                    width: 45%;
+
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+
+                    margin: 1vw;
+                    font-size: 1.5em;
+                    font-weight: bolder;
+                    color: var(--text-color-with-gradient);
+                }
             }
 
             .nav {
