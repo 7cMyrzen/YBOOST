@@ -3,6 +3,7 @@
     --background-color: #fff;
     --background-color-gradient: linear-gradient(90deg, #DDB4F6, #8DD0FC);
     --text-color-with-gradient: #fff;
+    --text-color-with-gradient-hover: #ffb2f2;
 }
 
 * {
@@ -30,7 +31,7 @@ body {
         width: 100vw;
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
@@ -79,8 +80,8 @@ body {
                     font-weight: bold;
                     transition: ease 0.5s;
 
-                    &:hover {
-                        font-size: 1.5em;
+                    &:hover { 
+                        color: var(--text-color-with-gradient-hover);
                         cursor: pointer;
                     }
                 }
@@ -144,6 +145,18 @@ body {
                     }
                 }
             }
+        }
+
+        .contenu {
+            height: 90dvh;
+            width: 100vw;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
         }
     }
 
